@@ -1,0 +1,5 @@
+
+SELECT * FROM ventes
+SELECT SUM(qte * prix) as chif_aff FROM ventes
+SELECT produit, SUM(qte * prix) as chif_aff FROM ventes GROUP BY produit
+SELECT region, SUM(qte * prix) as chif_aff FROM ventes GROUP BY region
